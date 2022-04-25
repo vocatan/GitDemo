@@ -49,7 +49,7 @@ Merge made by the 'ort' strategy.
  create mode 100644 cal.txt
 
 
-do a pull request to get your latest in sync with /master
+do a pull request to get your latest in sync with /master (or /main)
 
 
 
