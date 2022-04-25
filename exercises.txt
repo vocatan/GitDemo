@@ -1,0 +1,55 @@
+Clone this repository
+create a file with filename YOURNAME.sh  (use your name, not YOURNAME)
+Make this a bash script that prints out "Hello World". This is the first feature!
+Add the file to make a pending commit  'git add YOURNAME.sh'
+
+Commit the file. 'git commit'    What does this do?
+
+push the commit.  What does this do?
+
+New feature request comes in, client wants the script to also print out
+a calendar after the Hello World, add an invocation of 'cal' to the script.
+Commit the file and push it - this is 2nd feature complete
+
+TAG the repository as V1_0
+Discuss does adding a tag does.
+
+Do a pull request back to the originating repository via github.com gui
+
+add a git 'remote' to be able to pull upstream changes
+git remote add qmaster git@github.com:PublicRelay/Training.git
+git remote update
+
+Write one more new 'feature' for your shell script, print "Goodnight" at the end
+of the script.
+Commit & push the change
+
+>>>>>>>>>>>> customer calls and asks for a fix against the release V1_0
+git checkout -b hotfix_YOURNAME V1_0
+
+makes a local branch called "hotfix_YOURNAME" for creation of the fix
+  (example: mine is called hotfix_bill)
+make a few commits
+  - client asks for Hello World to have an ! at the end "Hello World!"
+  - change an existing file  (the file cal.txt looks like a good victim)
+  - delete a file
+>>>>>>>> commit your hotfix branch and do a PR
+
+switch back to main branch and get latest work
+  now MERGE your hotfix branch, so that your latest code has the customer fix
+
+git merge hotfix_YOURNAME
+
+billm@BM-big-MBP repo % git merge hotfix_bill
+Auto-merging bill.sh
+Merge made by the 'ort' strategy.
+ bill.sh | 2 +-
+ cal.txt | 8 ++++++++
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 cal.txt
+
+
+do a pull request to get your latest in sync with /master
+
+
+
