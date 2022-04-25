@@ -24,7 +24,7 @@ Commit the file and push it - this is 2nd feature complete
 of the script.
 ( ) Commit & push the change
 
-( ) >>>>>>>>>>>> customer calls and asks for a fix against the release V1_0
+( ) customer calls and asks for a fix against the release V1_0
 git checkout -b hotfix_YOURNAME V1_0
 
 ( ) makes a local branch called "hotfix_YOURNAME" for creation of the fix
@@ -33,7 +33,7 @@ git checkout -b hotfix_YOURNAME V1_0
 ( )   - client asks for Hello World to have an ! at the end "Hello World!"
 ( )   - change an existing file  (the file cal.txt looks like a good victim)
 ( )   - delete a file
->>>>>>>> commit your hotfix branch and do a PR
+commit your hotfix branch and do a PR
 
 ( ) switch back to main branch and get latest work
 ( )   now MERGE your hotfix branch, so that your latest code has the customer fix
@@ -49,7 +49,8 @@ git checkout -b hotfix_YOURNAME V1_0
 ( )  create mode 100644 cal.txt
 
 
-( ) do a pull request to get your latest in sync with /master
+( ) do a pull request to get your latest in sync with /master (or /main)
+
 
 
 
